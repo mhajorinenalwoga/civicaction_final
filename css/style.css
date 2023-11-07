@@ -40,6 +40,7 @@
 	/*=========Font Family==========*/
 
 	/* Abel */
+	/* --Abel:'Abel', cursive; */
 	--Abel:'Abel', cursive;
 
 	/* Alegreya */
@@ -167,7 +168,7 @@ header ul li a.active{
 
 /*==========05) Hero Section Start==========*/
 #hero{
-	background: url(../images/about.jpg);
+	background: url(../images/jj.jpg);
 	background-size: cover;
 	/*height: 100vh;*/
 	background-repeat:repeat-y;
@@ -201,7 +202,7 @@ header ul li a.active{
 .about-heading, 
 .lawyers-heading, 
 .publication-heading {
-	background: url(./images/case-5.jpg)no-repeat;
+	background: url(./images/hh.jpg)no-repeat;
 	background-size: 20% 100%;
 	border-left: 2px solid #e8bf5d;
 	padding: 0 20px;
@@ -378,3 +379,138 @@ header ul li a.active{
 	}
 }
 /*==========Media Query End==========*/
+
+/* ===========popup================ */
+.lawyers-preview{
+    position: absolute;
+    top: 0; left: 0;
+    height: 100vh;
+    width: 100%;
+    background: rgba(0, 0, 0, .8);
+    display: none;
+    align-items: center;
+    justify-content: center;
+}
+
+.lawyers-preview .preview{
+    display: none;
+	left: 30%;
+    padding: 3rem;
+    text-align: center;
+    background: #fff;
+    position: relative;
+    margin: 2rem;
+    width: 30rem;
+	font-size: 1.5rem;
+	border-radius: 2rem;
+}
+
+.lawyers-preview .preview.active{
+    display: inline-block;
+}
+
+.lawyers-preview .preview img{
+    height: 10rem;
+}
+
+.lawyers-preview .preview .fa-times{
+    position: absolute;
+    top: 1rem; right: 1.5rem;
+    cursor: pointer;
+    color: #444;
+    font-size: 2rem;
+}
+
+.lawyers-preview .preview .fa-times:hover{
+    transform: rotate(180deg);
+}
+
+.lawyers-preview .preview h3{
+    color: #444;
+    padding: .5rem 0;
+    font-size: 2.rem;
+}
+
+.lawyers-preview .preview .stars{
+    padding-bottom: 1rem;
+}
+
+.lawyers-preview .preview .stars ion-icon{
+    color: gold;
+	font-size: 2rem;
+}
+
+.lawyers-preview .preview .stars span{
+    color: #999;
+}
+
+.lawyers-preview .preview p{
+    line-height: 1.5;
+    padding: 1rem 0 3rem 0;
+	
+	font-size: 1rem;
+	color: #000;
+}
+
+.lawyers-preview .preview .mobile{
+    bottom: 7rem;
+	top: 4rem;
+    font-size: 1.3rem;
+    color: royalblue;
+}
+
+.lawyers-preview .preview .email{
+    padding: 1rem 0;
+    font-size: 1.3rem;
+    color: green;
+}
+
+.lawyers-preview .preview .buttons{
+    display: inline-block;
+    gap: 1.5rem;
+    flex-wrap: wrap;
+    margin-top: 1rem;
+	border-radius: 3rem;
+}
+
+.lawyers-preview .preview .buttons a{
+    flex: 1 1 16rem;
+    padding: 1rem;
+    font-size: 1rem;
+    color: .1rem solid #444;
+}
+
+.lawyers-preview .preview .buttons a.mail{
+    background: #444;
+    color: #fff;
+}
+
+.lawyers-preview .preview .buttons a.mail:hover{
+    background: #111;
+	border-radius: 2rem;
+}
+
+.lawyers-preview .preview .buttons a.call{
+	background: #ff0010;
+	color: #fff;
+}
+.lawyers-preview .preview .buttons a.call:hover{
+    background: #27ae60;
+    color: #ff0010;
+	border-radius: 2rem;
+}
+
+#page-top{
+	height: 100vh;
+}
+
+/* ========== Home page ============ */
+.banner{
+	width: 100%;
+	height: 100vh;
+	background-image: url("images\bg_2.jpg");
+	background-size: cover;
+	background-position: center;
+}
+
+
