@@ -30,6 +30,12 @@
 	--bg-color:#0f0f0f;
 	--white:#ffffff;
 	--mid-night: #104f55;
+	/* New Colors */
+	--gold: #ffd633ff;
+	--marian-blue: #28427bff;
+	--battleship-gray: #8f8f8fff;
+	--fluorescent-cyan: #42f0eaff;
+	--night: #141414ff;
 
 	/*Gradient Color*/
 	--sky:linear-gradient(120deg,#a1c4fd 0%, #c2e9fb 100%);
@@ -103,13 +109,13 @@ label{
 	display: block;
 	margin: 0 auto;
 	padding: 6px 20px;
-	background-color: #e8bf5d;
+	background-color: var(--gold);
 	border: none;
 	color: #111;
 }
 .btn-custom:hover {
 	background-color:#111 ;
-	color:#e8bf5d ;
+	color:var(--gold) ;
 }
 .btn:active,
 .btn:focus{
@@ -143,7 +149,7 @@ header .navbar-brand{
 header .navbar-brand span {
 	width: 10px;
 	height: 10px;
-	background: #e8bf5d;
+	background: var(--gold);
 	position: absolute;
 	bottom: 10px;
 	border-radius: 100%;
@@ -157,12 +163,12 @@ header ul li a{
 	font-weight: 600;
 }
 header ul li a:hover{
-	border-bottom: 2px solid #e8bf5d;
+	border-bottom: 2px solid var(--gold);
 	cursor: pointer;
 }
 header ul li a.active{
-	color: #e8bf5d !important;
-	border-bottom: 2px solid #e8bf5d;
+	color: var(--gold) !important;
+	border-bottom: 2px solid var(--gold);
 }
 /*==========04) Header Section End==========*/
 
@@ -185,7 +191,7 @@ header ul li a.active{
 .faq-heading,
 .contact-heading {
 	padding: 0 15px;
-	border-left: 2px solid #e8bf5d;
+	border-left: 2px solid var(--gold);
 	line-height: 10px;
 }
 #hero .hero-heading h1 {
@@ -204,7 +210,7 @@ header ul li a.active{
 .publication-heading {
 	background: url(./images/hh.jpg)no-repeat;
 	background-size: 20% 100%;
-	border-left: 2px solid #e8bf5d;
+	border-left: 2px solid var(--gold);
 	padding: 0 20px;
 }
 /*==========06) About Us Section End==========*/
@@ -239,11 +245,11 @@ header ul li a.active{
 
 /*==========09) Clients Section Start==========*/
 #clients .clients-img {
-	box-shadow: 15px 15px 0px #e8bf5d;
+	box-shadow: 15px 15px 0px var(--gold);
 }
 #clients .owl-theme .owl-dots .owl-dot.active span,
 #clients .owl-theme .owl-dots .owl-dot:hover span {
-	background: #e8bf5d !important;
+	background: var(--gold) !important;
 }
 /*==========09) Clients Section End==========*/
 
@@ -267,12 +273,15 @@ header ul li a.active{
 #four,
 #five,
 #six {
-	border-bottom: 2px solid #e8bf5d;	
+	border-bottom: 2px solid var(--gold);	
 }
 .faq-content-2{
-	background-color: #e8bf5d !important;
+	background-color: var(--gold) !important;
 	color:#000;
 	font-weight: 500;
+}
+#faq{
+	background-color: var(--marian-blue);
 }
 /*==========11) FAQ Section End=========*/
 
@@ -291,16 +300,16 @@ header ul li a.active{
 	display: block;
 	margin: 0 auto;
 	padding: 6px 20px;
-	background-color: #e8bf5d;
+	background-color: var(--gold);
 	border: none;
 	color: #111;
 }
 .form .btn:hover {
 	background-color:#111 ;
-	color:#e8bf5d ;
+	color:var(--gold) ;
 }
 .map {
-	box-shadow: -25px 25px 1px #e8bf5d;
+	box-shadow: -25px 25px 1px var(--gold);
 }
 /*==========12) Contact Section End========*/
 
@@ -384,9 +393,10 @@ header ul li a.active{
 .lawyers-preview{
     position: absolute;
     top: 0; left: 0;
-    height: 100vh;
+    height: 155vh;
     width: 100%;
     background: rgba(0, 0, 0, .8);
+	background-size: cover;
     display: none;
     align-items: center;
     justify-content: center;
@@ -502,6 +512,7 @@ header ul li a.active{
 
 #page-top{
 	height: 100vh;
+	background-color: var(--battleship-gray);
 }
 
 /* ========== Home page ============ */
