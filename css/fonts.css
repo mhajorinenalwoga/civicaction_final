@@ -29,3 +29,9 @@
 	font-family:Lexend;
 	src:url('../vendor/font/Inconsolata-VariableFont_wdth,wght.ttf');
 }
+
+/* Poppins */
+@font-face {
+	font-family: Poppins;
+	src: url('../vendor/fonts/Poppins/Poppins-Medium.ttf');
+}

@@ -61,6 +61,9 @@
 	/* Lexend */
 	--Lexend:'Lexend', cursive;
 
+	/* Poppins */
+	--Poppins: 'Poppins', cursive;
+
 }
 /*==========02) Variable Section End==========*/
 
@@ -159,8 +162,9 @@ header ul li a{
 	padding: 10px;
 	color: #111;
 	text-transform: uppercase;
-	font-family: var(--Inconsolata);
-	font-weight: 600;
+	font-family: var(--Poppins);
+	font-weight: 800;
+	font-size: 1.5em;
 }
 header ul li a:hover{
 	border-bottom: 2px solid var(--gold);
