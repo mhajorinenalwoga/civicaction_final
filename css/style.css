@@ -401,7 +401,7 @@ header ul li a.active{
     width: 100%;
     background: rgba(0, 0, 0, .8);
 	background-size: cover;
-    display: none;
+    display: ;
     align-items: center;
     justify-content: center;
 }
@@ -427,7 +427,7 @@ header ul li a.active{
     height: 10rem;
 }
 
-.lawyers-preview .preview .fa-times{
+.lawyers-preview .preview .fa-xmark{
     position: absolute;
     top: 1rem; right: 1.5rem;
     cursor: pointer;
@@ -435,7 +435,7 @@ header ul li a.active{
     font-size: 2rem;
 }
 
-.lawyers-preview .preview .fa-times:hover{
+.lawyers-preview .preview .fa-xmark:hover{
     transform: rotate(180deg);
 }
 
@@ -449,7 +449,7 @@ header ul li a.active{
     padding-bottom: 1rem;
 }
 
-.lawyers-preview .preview .stars ion-icon{
+.lawyers-preview .preview .stars i{
     color: gold;
 	font-size: 2rem;
 }
@@ -492,6 +492,7 @@ header ul li a.active{
     padding: 1rem;
     font-size: 1rem;
     color: .1rem solid #444;
+	text-decoration: none;
 }
 
 .lawyers-preview .preview .buttons a.mail{
