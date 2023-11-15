@@ -297,9 +297,10 @@ header ul li a.active{
 	padding: 15px 1px;
 	outline: none;
 }
-#message{
+/* #message{
 	padding:50px 0;
-}
+} 
+*/
 .form .btn {
 	display: block;
 	margin: 0 auto;
@@ -401,7 +402,7 @@ header ul li a.active{
     width: 100%;
     background: rgba(0, 0, 0, .8);
 	background-size: cover;
-    display: ;
+    display: none;
     align-items: center;
     justify-content: center;
 }
