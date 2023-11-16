@@ -321,6 +321,32 @@ header ul li a.active{
     transform: translateX(0);
 }
 
+.wrapper {
+    position: relative;
+    width: 400px;
+    height: 440px;
+    background: transparent;
+    backdrop-filter: blur(20px);
+    box-shadow: 0 0 10px rgba(0, 0, 0, .5);
+    color: #fff;
+    border-radius: 10px;
+    padding: 30px 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    transition: height .2s ease;
+}
+
+.wrapper .form-box {
+    width: 100%;
+    /*padding: 40px;*/
+}
+
+.wrapper.active{
+    height: 520px;
+}
+
  .form.register{
     position: absolute;
     transform: translateX(400px);
