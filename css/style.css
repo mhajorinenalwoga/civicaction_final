@@ -316,6 +316,26 @@ header ul li a.active{
 .map {
 	box-shadow: -25px 25px 1px var(--gold);
 }
+.form.login{
+    transition: transform .18s ease;
+    transform: translateX(0);
+}
+
+ .form.register{
+    position: absolute;
+    transform: translateX(400px);
+}
+
+.active .form.login{
+   transition: none;
+   transform: translateX(-400px);
+}
+
+.active .form.register{
+    transition: transform .18s ease;
+    transform: translateX(0);
+}
+
 /*==========12) Contact Section End========*/
 
 /*==========13) Footer Section Start==========*/
