@@ -148,6 +148,9 @@ header .navbar-brand{
 	position: relative;
 }
 
+#header{
+	background: var(--marian-blue);
+}
 
 header .navbar-brand span {
 	width: 10px;
@@ -169,6 +172,7 @@ header ul li a{
 header ul li a:hover{
 	border-bottom: 2px solid var(--gold);
 	cursor: pointer;
+	font-family: var(--Inconsolata);
 }
 header ul li a.active{
 	color: var(--gold) !important;
@@ -296,6 +300,8 @@ header ul li a.active{
 	margin-bottom: 10px;
 	padding: 15px 1px;
 	outline: none;
+	width: 18rem;
+	font-family: var(--Inconsolata);
 }
 /* #message{
 	padding:50px 0;
@@ -305,9 +311,11 @@ header ul li a.active{
 	display: block;
 	margin: 0 auto;
 	padding: 6px 20px;
+	width: 7rem;
 	background-color: var(--gold);
 	border: none;
 	color: #111;
+	font-weight: 600;
 }
 .form .btn:hover {
 	background-color:#111 ;
@@ -319,16 +327,16 @@ header ul li a.active{
 
 .wrapper {
     position: relative;
-    width: 400px;
+    width: 420px;
     height: 440px;
-    background: transparent;
+    background: var(--marian-blue);
     backdrop-filter: blur(20px);
     box-shadow: 0 0 10px rgba(0, 0, 0, .5);
     color: #fff;
     border-radius: 10px;
 	left: 40%;
     padding: 30px 40px;
-    display: flex;
+    display: inline-block;
     justify-content: center;
     align-items: center;
     overflow: hidden;
@@ -345,6 +353,7 @@ header ul li a.active{
 .wrapper .form-box.login {
     transition: transform .18s ease;
     transform: translateX(0);
+	right: 2rem;
 }
 .wrapper .form-box.register{
     position: absolute;
@@ -361,6 +370,18 @@ header ul li a.active{
     transform: translateX(0);
 }
 
+.login-link a,
+.register-link a {
+    text-decoration: none; /* Remove text decoration */
+    color: var(--gold); /* Set the color for the links */
+}
+
+.login-link a:hover,
+.register-link a:hover {
+    text-decoration:solid; /* Add underline on hover if needed */
+	color: var(--fluorescent-cyan);
+	font-family: var(--Inconsolata);
+}
 
 /*==========12) Contact Section End========*/
 
