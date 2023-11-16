@@ -316,10 +316,6 @@ header ul li a.active{
 .map {
 	box-shadow: -25px 25px 1px var(--gold);
 }
-.form.login{
-    transition: transform .18s ease;
-    transform: translateX(0);
-}
 
 .wrapper {
     position: relative;
@@ -330,6 +326,7 @@ header ul li a.active{
     box-shadow: 0 0 10px rgba(0, 0, 0, .5);
     color: #fff;
     border-radius: 10px;
+	left: 40%;
     padding: 30px 40px;
     display: flex;
     justify-content: center;
@@ -338,29 +335,32 @@ header ul li a.active{
     transition: height .2s ease;
 }
 
+/* Add these lines to your existing CSS code */
+
 .wrapper .form-box {
-    width: 100%;
-    /*padding: 40px;*/
+	width: 100%;
+    transition: transform .18s ease;
 }
 
-.wrapper.active{
-    height: 520px;
+.wrapper .form-box.login {
+    transition: transform .18s ease;
+    transform: translateX(0);
 }
-
- .form.register{
+.wrapper .form-box.register{
     position: absolute;
     transform: translateX(400px);
 }
 
-.active .form.login{
-   transition: none;
-   transform: translateX(-400px);
-}
+.wrapper.active .form-box.login{
+	transition: none;
+	transform: translateX(-400px);
+ }
 
-.active .form.register{
+.wrapper.active .form-box.register{
     transition: transform .18s ease;
     transform: translateX(0);
 }
+
 
 /*==========12) Contact Section End========*/
 
